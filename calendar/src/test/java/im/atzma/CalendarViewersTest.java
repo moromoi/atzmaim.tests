@@ -10,9 +10,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class ViewButtonTextTest {
+public class CalendarViewersTest {
   private WebDriver driver;
-  private String baseUrl;
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
@@ -22,12 +21,8 @@ public class ViewButtonTextTest {
     Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");
 
     driver = new ChromeDriver();
-    baseUrl = "https://www.katalon.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-  }
 
-  @Test
-  public void testUntitledTestCase() throws Exception {
     driver.get("https://atzma.im/ru/home");
     driver.findElement(By.id("login")).click();
     driver.findElement(By.name("email")).click();
@@ -36,6 +31,11 @@ public class ViewButtonTextTest {
     driver.findElement(By.name("pass")).click();
     driver.findElement(By.name("pass")).clear();
     driver.findElement(By.name("pass")).sendKeys("admin");
+  }
+
+  @Test
+  public void testViewText() throws Exception {
+
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='или'])[1]/following::button[1]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='היום'])[2]/following::button[1]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='היום'])[1]/following::button[1]")).click();
