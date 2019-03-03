@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.ArrayList;
+
 
 public class CalendarViewersTest extends TestBase {
 
@@ -13,9 +13,10 @@ public class CalendarViewersTest extends TestBase {
         List<String> before = app.getCalendarMenuHelper().getViewerList();
         List<String> after = app.getCalendarMenuHelper().getViewerText();
 
-        Assert.assertEquals(after, before); 
+        Assert.assertEquals(after, before);
 
     }
+
 
 
 }

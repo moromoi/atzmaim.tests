@@ -31,7 +31,7 @@ public class ApplicationManager {
         sessionHelper.login("admin@email.com", "admin");
 
         calendarMenuHelper = new CalendarMenuHelper(driver);
-        calendarMenuHelper.getViewerText();
+
     }
 
 

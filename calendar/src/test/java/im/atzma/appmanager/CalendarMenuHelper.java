@@ -5,19 +5,31 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-import java.util.List;
-import java.util.ArrayList;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.*;
 
 public class CalendarMenuHelper extends HelperBase {
     @FindBy(css = ".daily_wrap.daily_wrap_label")
     WebElement img_view;
 
+    @FindBy(css=".prev_button")
+    WebElement btnPrevDay;
+
+    @FindBy(css=".next_button")
+    WebElement btnNextDay;
+
+    @FindBy(css=".current_date_field")
+    WebElement calendarCurrentDateField;
+
     public CalendarMenuHelper(WebDriver driver) {
         super(driver);
     }
+//============================================================================================================//
 
     public List<String> getViewerText() throws InterruptedException {
-
         List<String> vT = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
 
@@ -37,4 +49,27 @@ public class CalendarMenuHelper extends HelperBase {
         vList.add("יומי");
         return vList;
     }
+
+    public String flipCalendar() {
+//        for(int i=1; i < 5; i++) {
+//            click(btnPrevDay);
+//        }
+        String calendarCurrentDayField = calendarCurrentDateField.getText();
+        return  calendarCurrentDayField;
+    }
+
+    public String getWorldDate() {
+
+        Locale aLocale = new Locale.Builder().setLanguage("iw").setRegion("IL").build();
+        DateFormat timeFormat = new SimpleDateFormat("dd E, MMMM", aLocale);
+        timeFormat.setTimeZone(TimeZone.getTimeZone("Asia/Jerusalem"));
+        String curTime = timeFormat.format(new Date());
+
+
+        DateFormat dateFormat = new SimpleDateFormat("F");
+        Date date = new Date();
+        String dateNow = dateFormat.format(date);
+        return curTime;
+    }
+
 }
