@@ -9,8 +9,9 @@ public class CalendarDateTest extends TestBase {
     public void testGetCalendarDate () {
         String worldDate = app.getCalendarMenuHelper().getWorldDate();
         String toDay = app.getCalendarMenuHelper().flipCalendar();
-        Assert.assertEquals( worldDate, toDay);
-        System.out.println(toDay);
+
+        Assert.assertEquals(worldDate, toDay);
+
 
     }
 }

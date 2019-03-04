@@ -3,12 +3,8 @@ package im.atzma.appmanager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.*;
 
 public class CalendarMenuHelper extends HelperBase {
@@ -23,6 +19,12 @@ public class CalendarMenuHelper extends HelperBase {
 
     @FindBy(css=".current_date_field")
     WebElement calendarCurrentDateField;
+
+    @FindBy(css=".more_wrap")
+    WebElement btnMenu;
+
+    @FindBy(xpath ="//div[@class = 'menu-wrapper']//a")
+    List<WebElement> calendarMenuItems;
 
     public CalendarMenuHelper(WebDriver driver) {
         super(driver);
@@ -61,7 +63,8 @@ public class CalendarMenuHelper extends HelperBase {
     public String getWorldDate() {
 
         Locale aLocale = new Locale.Builder().setLanguage("iw").setRegion("IL").build();
-        DateFormat timeFormat = new SimpleDateFormat("dd E, MMMM", aLocale);
+        DateFormat timeFormat = new SimpleDateFormat("dd E , MMMM", aLocale);
+
         timeFormat.setTimeZone(TimeZone.getTimeZone("Asia/Jerusalem"));
         String curTime = timeFormat.format(new Date());
 
@@ -72,4 +75,28 @@ public class CalendarMenuHelper extends HelperBase {
         return curTime;
     }
 
+    public List<String> getDefaultMenuItemsList() {
+        List<String> itemList = new ArrayList<>();
+        itemList.add("יומן");
+        itemList.add("מאגר לקוחות");
+        itemList.add("תזכורות");
+        itemList.add("קבוצות");
+        itemList.add("תמיכה");
+        itemList.add("הציע לנו פיצ'ר");
+        itemList.add("Rate us");
+        itemList.add("לצאת");
+
+        return itemList;
+    }
+
+    public List<String> getCurrentMenuItemsLIst() {
+        click(btnMenu);
+        List<String> itemListToday = new ArrayList<>();
+        for (int i = 0; i < calendarMenuItems.size(); i++) {
+            itemListToday.add(calendarMenuItems.get(i).getText());
+            System.out.println(calendarMenuItems.get(i).getText());
+
+        }
+        return itemListToday;
+    }
 }

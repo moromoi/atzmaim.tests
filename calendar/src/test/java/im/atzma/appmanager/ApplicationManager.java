@@ -19,6 +19,7 @@ public class ApplicationManager {
     private CalendarMenuHelper calendarMenuHelper;
 
 
+
     public void init() throws IOException, InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\automation\\browser drivers\\chromeDriver 2.45\\chromedriver.exe");
 
