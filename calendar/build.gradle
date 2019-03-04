@@ -12,13 +12,16 @@ dependencies {
 
 }
 
-test {
+task testCalendar (type: Test) {
     useTestNG() {
-        useDefaultListeners = true
-        suiteXmlFilesm << new File("src/test/resources/testngAtzmaim.xml")
-        setSuiteXmlFiles(suiteXmlFiles)
+        suites 'src/test/testng-Calendar.xml'
     }
 }
 
+task testMenu (type: Test) {
+    useTestNG() {
+        suites 'src/test/testng-Menu.xml'
+    }
+}
 
 
