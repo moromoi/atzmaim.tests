@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0656902b-df21-4423-a6a1-ba38dc7a3b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/testng-Menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tests-results/Test Results - CalendarViewersTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/im/atzma/ViewButtonTextTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -310,7 +306,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551739988178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551740473882" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -418,7 +414,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551548226592</updated>
-      <workItem from="1551548230724" duration="50496000" />
+      <workItem from="1551548230724" duration="51338000" />
     </task>
     <servers />
   </component>
@@ -455,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50496000" />
+    <option name="totallyTimeSpent" value="51338000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
