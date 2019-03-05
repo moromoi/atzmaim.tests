@@ -45,7 +45,7 @@ public class CalendarMenuHelper extends HelperBase {
 
     public List<String> getViewerList() {
         List<String> vList = new ArrayList<>();
-        vList.add("שבועי");
+        vList.add("dyda");
         vList.add("חודשי");
         vList.add("אג'נדה");
         vList.add("יומי");
