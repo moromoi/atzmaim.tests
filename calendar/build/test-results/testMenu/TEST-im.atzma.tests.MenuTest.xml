@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="im.atzma.tests.MenuTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-04T22:42:43" hostname="DESKTOP-2Q8P5UA" time="0.483">
+<testsuite name="im.atzma.tests.MenuTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-05T11:51:28" hostname="DESKTOP-2Q8P5UA" time="0.555">
   <properties/>
-  <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="0.483">
+  <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="0.555">
     <failure message="java.lang.AssertionError: Lists differ at element [0]: ×™×•×ž×Ÿ != יומן expected [×™×•×ž×Ÿ] but found [יומן]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [0]: ×™×•×ž×Ÿ != יומן expected [×™×•×ž×Ÿ] but found [יומן]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -71,9 +71,9 @@
 Rate us
 ????
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 45800
+  <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 40849
 Only local connections are allowed.
-Mar 05, 2019 12:42:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 05, 2019 1:51:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

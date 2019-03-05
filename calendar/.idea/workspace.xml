@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0656902b-df21-4423-a6a1-ba38dc7a3b25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/im.atzma.tests.CalendarDateTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/im.atzma.tests.CalendarViewersTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/im.atzma.tests.MenuTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/im.atzma.tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/testMenu/classes/im.atzma.tests.MenuTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testMenu/classes/im.atzma.tests.MenuTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/testMenu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testMenu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/testMenu/packages/im.atzma.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/testMenu/packages/im.atzma.tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/testMenu/TEST-im.atzma.tests.MenuTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testMenu/TEST-im.atzma.tests.MenuTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/testMenu/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testMenu/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/testMenu/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testMenu/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/testMenu/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/testMenu/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/im/atzma/ViewButtonTextTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/im/atzma/appmanager/CalendarMenuHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
               <folding>
                 <element signature="e#224#225#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
@@ -137,7 +137,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -150,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/testng-Calendar.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -159,7 +159,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/testng-Menu.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -211,7 +211,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="117" />
     <option name="y" value="32" />
     <option name="width" value="1585" />
@@ -344,7 +344,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551773351797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551795905995" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -375,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.F:/Devel2/atzmaim.tests/calendar/src/test/testng-Calendar.xml">
+  <component name="RunManager" selected="TestNG.F:/Devel2/atzmaim.tests/calendar/src/test/testng-Menu.xml">
     <configuration name="F:/Devel2/atzmaim.tests/calendar/src/test/testng-Calendar.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="calendar.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng-Calendar.xml" />
@@ -434,8 +434,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.F:/Devel2/atzmaim.tests/calendar/src/test/testng-Calendar.xml" />
         <item itemvalue="TestNG.F:/Devel2/atzmaim.tests/calendar/src/test/testng-Menu.xml" />
+        <item itemvalue="TestNG.F:/Devel2/atzmaim.tests/calendar/src/test/testng-Calendar.xml" />
         <item itemvalue="TestNG.F:/Devel2/atzmaim.tests/calendar/src/test/testng.xml" />
         <item itemvalue="TestNG.F:/Devel2/atzmaim.tests/calendar/testng.xml" />
         <item itemvalue="TestNG.MenuTest" />
@@ -452,17 +452,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551548226592</updated>
-      <workItem from="1551548230724" duration="53031000" />
+      <workItem from="1551548230724" duration="54343000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTest - 2019.03.04 at 12h 50m 58s.xml">
-      <configuration name="MenuTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MenuTest - 2019.03.04 at 12h 51m 45s.xml">
-      <configuration name="MenuTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CalendarViewersTest - 2019.03.04 at 20h 32m 05s.xml">
       <configuration name="CalendarViewersTest" configurationId="TestNG" />
     </history-entry>
@@ -487,11 +481,17 @@
     <history-entry file="F__Devel2_atzmaim_tests_calendar_src_test_testng-Calendar_xml - 2019.03.05 at 00h 45m 21s.xml">
       <configuration name="F:/Devel2/atzmaim.tests/calendar/src/test/testng-Calendar.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="F__Devel2_atzmaim_tests_calendar_src_test_testng-Menu_xml - 2019.03.05 at 14h 04m 51s.xml">
+      <configuration name="F:/Devel2/atzmaim.tests/calendar/src/test/testng-Menu.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CalendarViewersTest - 2019.03.05 at 14h 05m 50s.xml">
+      <configuration name="CalendarViewersTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53031000" />
+    <option name="totallyTimeSpent" value="54343000" />
   </component>
-  <component name="TodoView" selected-index="2">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -501,7 +501,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -510,7 +510,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2595949" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2595949" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
@@ -520,7 +520,7 @@
       <window_info anchor="bottom" id="Build" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49946696" visible="true" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49946696" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -636,27 +636,6 @@
     <entry file="file://$PROJECT_DIR$/build/test-results/test/TEST-im.atzma.tests.CalendarViewersTest.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testng-Calendar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testng-Menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/im/atzma/tests/CalendarDateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -685,11 +664,32 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/im/atzma/appmanager/CalendarMenuHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding>
             <element signature="e#224#225#0" expanded="true" />
             <element signature="e#253#254#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testng-Calendar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testng-Menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
