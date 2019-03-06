@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="im.atzma.tests.MenuTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-06T12:00:28" hostname="DESKTOP-2Q8P5UA" time="1.64">
+<testsuite name="im.atzma.tests.MenuTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-06T13:25:44" hostname="DESKTOP-2Q8P5UA" time="1.651">
   <properties/>
-  <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="1.64">
+  <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="1.651">
     <failure message="java.lang.AssertionError: Lists differ at element [0]: ×™×•×ž×Ÿ != יומן expected [×™×•×ž×Ÿ] but found [יומן]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [0]: ×™×•×ž×Ÿ != יומן expected [×™×•×ž×Ÿ] but found [יומן]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -71,23 +71,22 @@
 Rate us
 ????
 ]]></system-out>
-  <system-err><![CDATA[1551873624271	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Owner\\AppData\\Local\\Temp\\rust_mozprofile.lHJO1czEpjcF"
-1551873624577	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
-1551873624577	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
-1551873625570	Marionette	INFO	Listening on port 60319
-1551873625927	Marionette	WARN	TLS certificate errors will be ignored for this session
-Mar 06, 2019 2:00:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[1551878738426	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Owner\\AppData\\Local\\Temp\\rust_mozprofile.rUTSflKkuSLu"
+1551878738735	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551878738736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551878739760	Marionette	INFO	Listening on port 53737
+1551878740072	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 06, 2019 3:25:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1551873630551	Marionette	INFO	Stopped listening on port 60319
-[Parent 13336, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 17216, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 17216, Chrome_ChildThread] WARNING: pip[Child 7100, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 7100, Chrome_ChildThread] WARNING: pipe err[Parent 13336, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 4312, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 4312, Chrome_ChildThread] W
+1551878745708	Marionette	INFO	Stopped listening on port 53737
+[Child 14816, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 14816, Chrome_ChildThread] WARNING[Parent 4752, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 11320, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 493
+[Child 11320, Chrome_ChildThread] WARNING: pipe erro[Child 13380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 13380, Chrome_ChildThread] WARNING: pipe 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-[GPU 14368, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromi
+[GPU 13156, Chrome_ChildThread] WARNING: pipe er
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
 ]]></system-err>
