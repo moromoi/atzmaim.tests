@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="im.atzma.tests.CalendarViewersTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-04T22:44:19" hostname="DESKTOP-2Q8P5UA" time="0.9">
+<testsuite name="im.atzma.tests.CalendarViewersTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-06T10:39:05" hostname="DESKTOP-2Q8P5UA" time="0.936">
   <properties/>
-  <testcase name="testViewText" classname="im.atzma.tests.CalendarViewersTest" time="0.9">
+  <testcase name="testViewText" classname="im.atzma.tests.CalendarViewersTest" time="0.936">
     <failure message="java.lang.AssertionError: Lists differ at element [0]: ×©×‘×•×¢×™ != שבועי expected [×©×‘×•×¢×™] but found [שבועי]" type="java.lang.AssertionError">java.lang.AssertionError: Lists differ at element [0]: ×©×‘×•×¢×™ != שבועי expected [×©×‘×•×¢×™] but found [שבועי]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -63,9 +63,9 @@
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 35733
+  <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 27913
 Only local connections are allowed.
-Mar 05, 2019 12:44:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 06, 2019 12:39:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

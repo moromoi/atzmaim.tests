@@ -14,14 +14,29 @@ dependencies {
 
 task testCalendar (type: Test) {
     useTestNG() {
-        suites 'src/test/testng-Calendar.xml'
+        suites 'src/test/resources/testng-Calendar.xml'
+    }
+    if(project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if(project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
     }
 }
 
 task testMenu (type: Test) {
     useTestNG() {
-        suites 'src/test/testng-Menu.xml'
+        suites 'src/test/resources/testng-Menu.xml'
     }
+    if(project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if(project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+
+
 }
+
 
 
