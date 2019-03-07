@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.CommandExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -52,6 +53,11 @@ public class ApplicationManager {
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setBrowserName(browser);
                 driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+
+//                DesiredCapabilities capabilities = new DesiredCapabilities();
+//                capabilities.setBrowserName("safari");
+//                CommandExecutor executor = new SeleneseCommandExecutor(new URL("http://localhost:4444/"), new URL("http://www.google.com/"), capabilities);
+//                WebDriver driver = new RemoteWebDriver(executor, capabilities);
             }
         }
 
