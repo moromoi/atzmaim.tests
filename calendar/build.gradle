@@ -22,6 +22,7 @@ task testCalendar (type: Test) {
     if(project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
+   
 }
 
 task testMenu (type: Test) {

@@ -52,7 +52,8 @@ public class ApplicationManager {
             else {
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setBrowserName(browser);
-                driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+//                driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/"), capabilities);
 
 //                DesiredCapabilities capabilities = new DesiredCapabilities();
 //                capabilities.setBrowserName("safari");
