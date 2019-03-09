@@ -77,7 +77,7 @@ public class CalendarMenuHelper extends HelperBase {
 
     public List<String> getDefaultMenuItemsList() {
         List<String> itemList = new ArrayList<>();
-        itemList.add("יומן");
+        itemList.add("×™×•×ž×Ÿ");
         itemList.add("מאגר לקוחות");
         itemList.add("תזכורות");
         itemList.add("קבוצות");
