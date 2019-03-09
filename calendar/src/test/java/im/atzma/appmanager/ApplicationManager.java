@@ -51,10 +51,16 @@ public class ApplicationManager {
             }
         }
         else {
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setBrowserName(browser);
-            capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
-            driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+//            DesiredCapabilities capabilities = new DesiredCapabilities();
+//            capabilities.setBrowserName(browser);
+//            capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
+//            driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+
+            DesiredCapabilities capability = DesiredCapabilities.chrome();
+            capability.setBrowserName("chrome");
+            capability.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
+            capability.setVersion("72.0.3626.121");
+            driver = new RemoteWebDriver(new URL("http://192.168.0.102:4444/wd/hub"), capability);
 
         }
 
