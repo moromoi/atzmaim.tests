@@ -35,7 +35,7 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-    public void init() throws IOException, InterruptedException {
+    public void init() throws Exception {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
@@ -50,11 +50,11 @@ public class ApplicationManager {
 
             }
         }
-            else {
-                DesiredCapabilities capabilities = new DesiredCapabilities();
-                capabilities.setBrowserName(browser);
-                capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "wn10")));
-                driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+        else {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setBrowserName(browser);
+            capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
+            driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
 
         }
 

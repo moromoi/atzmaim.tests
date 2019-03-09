@@ -2,10 +2,9 @@
 
 <suite name="Suite1" verbose="1" >
 
-    <test name="Menu">
+    <test name="Calendar" >
         <classes>
-            <class name="im.atzma.tests.MenuTest" />
-
+            <class name="im.atzma.tests.Server" />
         </classes>
     </test>
 

@@ -5,6 +5,7 @@
     <test name="Menu">
         <classes>
             <class name="im.atzma.tests.MenuTest" />
+
         </classes>
     </test>
 

@@ -10,6 +10,8 @@ dependencies {
     compile 'org.testng:testng:7.0.0-beta3'
     compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
 
+
+
 }
 
 task testCalendar (type: Test) {
@@ -19,30 +21,46 @@ task testCalendar (type: Test) {
     if(project.hasProperty('platform')) {
         systemProperty 'platform', "${platform}"
     }
-    
+
     if(project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
     if(project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
-   
+
 }
 
 task testMenu (type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng-Menu.xml'
     }
-    if(project.hasProperty('platform')) {
+    if (project.hasProperty('platform')) {
         systemProperty 'platform', "${platform}"
     }
-    
-    if(project.hasProperty('browser')) {
+
+    if (project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
-    if(project.hasProperty('target')) {
+    if (project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
+}
+    
+    task Server (type: Test) {
+        useTestNG() {
+            suites 'src/test/resources/testng-Server.xml'
+        }
+        if(project.hasProperty('platform')) {
+            systemProperty 'platform', "${platform}"
+        }
+
+        if(project.hasProperty('browser')) {
+            systemProperty 'browser', "${browser}"
+        }
+        if(project.hasProperty('target')) {
+            systemProperty 'target', "${target}"
+        }
 
 
 }
