@@ -16,6 +16,10 @@ task testCalendar (type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng-Calendar.xml'
     }
+    if(project.hasProperty('platform')) {
+        systemProperty 'platform', "${platform}"
+    }
+    
     if(project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
@@ -29,6 +33,10 @@ task testMenu (type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng-Menu.xml'
     }
+    if(project.hasProperty('platform')) {
+        systemProperty 'platform', "${platform}"
+    }
+    
     if(project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }

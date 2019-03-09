@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="im.atzma.tests.MenuTest" tests="3" skipped="1" failures="2" errors="0" timestamp="2019-03-07T19:52:30" hostname="DESKTOP-2Q8P5UA" time="0.011">
+<testsuite name="im.atzma.tests.MenuTest" tests="3" skipped="1" failures="2" errors="0" timestamp="2019-03-09T14:58:00" hostname="DESKTOP-2Q8P5UA" time="0.011">
   <properties/>
-  <testcase name="setUp" classname="im.atzma.tests.MenuTest" time="0.007">
+  <testcase name="setUp" classname="im.atzma.tests.MenuTest" time="0.008">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at im.atzma.appmanager.ApplicationManager.init(ApplicationManager.java:65)
 	at im.atzma.tests.TestBase.setUp(TestBase.java:18)
@@ -66,7 +66,7 @@
   <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="tearDown" classname="im.atzma.tests.MenuTest" time="0.001">
+  <testcase name="tearDown" classname="im.atzma.tests.MenuTest" time="0.0">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at im.atzma.appmanager.ApplicationManager.stop(ApplicationManager.java:77)
 	at im.atzma.tests.TestBase.tearDown(TestBase.java:23)

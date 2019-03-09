@@ -2,45 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e9d204c-8b92-4cf3-bd7a-47da92c44be9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/classes/java/test/im/atzma/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/classes/java/test/im/atzma/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/distributions/calendar.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/distributions/calendar.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/libs/calendar.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/classes/im.atzma.tests.CalendarDateTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/classes/im.atzma.tests.CalendarViewersTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testCalendar/packages/im.atzma.tests.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/classes/im.atzma.tests.MenuTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/classes/im.atzma.tests.MenuTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/js/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/packages/im.atzma.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/reports/tests/testMenu/packages/im.atzma.tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/resources/test/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/resources/test/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/scripts/calendar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/scripts/calendar.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testCalendar/TEST-im.atzma.tests.CalendarDateTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testCalendar/TEST-im.atzma.tests.CalendarViewersTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testCalendar/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testCalendar/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testCalendar/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testMenu/TEST-im.atzma.tests.MenuTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/test-results/testMenu/TEST-im.atzma.tests.MenuTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testMenu/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/test-results/testMenu/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testMenu/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/test-results/testMenu/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/build/test-results/testMenu/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/build/test-results/testMenu/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/META-INF/calendar.main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/ViewButtonTextTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/calendar/.gradle/" />
     <ignored path="$PROJECT_DIR$/calendar/build/" />
@@ -65,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="323">
+              <caret line="54" column="97" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -78,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -86,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="199">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -102,11 +75,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/remote.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="51">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -128,10 +101,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/calendar/build.gradle" />
-        <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/calendar/src/test/resources/remote.properties" />
       </list>
     </option>
   </component>
@@ -205,7 +179,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551988394303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552143617900" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/calendar/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -366,7 +340,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -375,7 +349,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.34994584" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.34994584" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -391,27 +365,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java</url>
-          <line>37</line>
-          <properties class="im.atzma.appmanager.ApplicationManager" method="init">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/testng-Menu.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/testng-Calendar.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/7.0.0-beta3/26002157600abfaa1060ca485c43aef748b6b659/testng-7.0.0-beta3-sources.jar!/org/testng/internal/ConfigInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -436,14 +390,7 @@
     <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -454,17 +401,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/remote.properties">
+    <entry file="file://$PROJECT_DIR$/calendar/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="199">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/testng-Calendar.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/testng-Menu.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="323">
+          <caret line="54" column="97" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/remote.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
