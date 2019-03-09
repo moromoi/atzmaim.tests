@@ -12,7 +12,7 @@ public class MenuTest extends TestBase {
         List<String> before = app.getCalendarMenuHelper().getDefaultMenuItemsList();
         List<String> after = app.getCalendarMenuHelper().getCurrentMenuItemsLIst();
 
-        Assert.assertEquals(after, before);
+        Assert.assertEquals(before, after);
     }
 
 
