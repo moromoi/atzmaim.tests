@@ -49,17 +49,13 @@ public class ApplicationManager {
                 driver = new ChromeDriver();
 
             }
+        }
             else {
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setBrowserName(browser);
                 capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win7")));
                 driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
 
-//                DesiredCapabilities capabilities = new DesiredCapabilities();
-//                capabilities.setBrowserName("safari");
-//                CommandExecutor executor = new SeleneseCommandExecutor(new URL("http://localhost:4444/"), new URL("http://www.google.com/"), capabilities);
-//                WebDriver driver = new RemoteWebDriver(executor, capabilities);
-            }
         }
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
