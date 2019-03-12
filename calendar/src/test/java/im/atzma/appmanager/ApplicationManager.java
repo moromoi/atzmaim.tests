@@ -2,6 +2,7 @@ package im.atzma.appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CommandExecutor;
@@ -55,11 +56,14 @@ public class ApplicationManager {
 //            capabilities.setBrowserName(browser);
 //            capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
 //            driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+            ChromeOptions options = new ChromeOptions();
+
 
             DesiredCapabilities capability = DesiredCapabilities.chrome();
             capability.setBrowserName("chrome");
             capability.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
             capability.setVersion("72.0.3626.121");
+
             driver = new RemoteWebDriver(new URL("http://192.168.0.102:4444/wd/hub"), capability);
 
         }
@@ -120,5 +124,9 @@ public class ApplicationManager {
 
     public CalendarMenuHelper getCalendarMenuHelper() {
         return calendarMenuHelper;
+    }
+
+    public byte[] takeScreenshot() {
+       return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }

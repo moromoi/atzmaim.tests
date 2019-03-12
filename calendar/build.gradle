@@ -1,18 +1,49 @@
+
+
 plugins {
     id 'java'
+    id "io.qameta.allure" version "2.7.0"
+}
+
+configurations {
+    agent
 }
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
     compile 'org.testng:testng:7.0.0-beta3'
     compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
 
+//    compile "io.qameta.allure:allure-gradle:2.7.0"
 
+    agent "org.aspectj:aspectjweaver:1.8.10"
+    compile "io.qameta.allure:allure-testng:2.0-BETA10"
 
 }
+test.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
+
+//allure {
+//    version = '2.10.0'
+//    autoconfigure = true
+//}
+
+task generateAllure(type: Exec) {
+    workingDir "$projectDir/allure/bin"
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine 'cmd', '/c', 'allure.bat', 'generate', '-c', '../../integration/build/allure-results'
+    } else {
+        commandLine 'bash', '-c', 'allure', 'generate', '-c',"$projectDir/integration/build/allure-results"
+    }
+}
+
+tasks.withType(Test)*.finalizedBy generateAllure
+
 
 task testCalendar (type: Test) {
     useTestNG() {
@@ -45,6 +76,8 @@ task testMenu (type: Test) {
     if (project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
+
+    systemProperty 'allure.results.directory', 'build/allure-results'
 
 }
 
