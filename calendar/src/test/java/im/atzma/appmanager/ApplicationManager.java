@@ -46,7 +46,7 @@ public class ApplicationManager {
                 driver = new FirefoxDriver();
 
             } else if (browser.equals(BrowserType.CHROME)) {
-                System.setProperty("webdriver.chrome.driver", "C:\\automation\\browser drivers\\chromeDriver 2.45\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\automation\\browser drivers\\chrome\\chromedriver.exe");
                 driver = new ChromeDriver();
 
             }
