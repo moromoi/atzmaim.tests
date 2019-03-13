@@ -33,14 +33,6 @@ test.doFirst {
 //    autoconfigure = true
 //}
 
-task generateAllure(type: Exec) {
-    workingDir "$projectDir/allure/bin"
-    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-        commandLine 'cmd', '/c', 'allure.bat', 'generate', '-c', '../../integration/build/allure-results'
-    } else {
-        commandLine 'bash', '-c', 'allure', 'generate', '-c',"$projectDir/integration/build/allure-results"
-    }
-}
 
 tasks.withType(Test)*.finalizedBy generateAllure
 
@@ -76,8 +68,6 @@ task testMenu (type: Test) {
     if (project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
-
-    systemProperty 'allure.results.directory', 'build/allure-results'
 
 }
 
