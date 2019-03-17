@@ -25,6 +25,7 @@ public class ApplicationManager {
 
     private SessionHelper sessionHelper;
     private CalendarMenuHelper calendarMenuHelper;
+    private AppointmentHelper appointmentHelper;
     private String browser;
 
     public boolean acceptNextAlert = true;
@@ -42,11 +43,11 @@ public class ApplicationManager {
 
         if("".equals(properties.getProperty("selenium.server"))) {
             if (browser.equals(BrowserType.FIREFOX)) {
-                System.setProperty("webdriver.gecko.driver", "C:\\automation\\browser drivers\\firefox\\geckodriver.exe");
+//                System.setProperty("webdriver.gecko.driver", "C:\\automation\\browser drivers\\firefox\\geckodriver.exe");
                 driver = new FirefoxDriver();
 
             } else if (browser.equals(BrowserType.CHROME)) {
-                System.setProperty("webdriver.chrome.driver", "C:\\automation\\browser drivers\\chrome\\chromedriver.exe");
+//                System.setProperty("webdriver.chrome.driver", "C:\\automation\\browser drivers\\chrome\\chromedriver.exe");
                 driver = new ChromeDriver();
 
             }
@@ -75,6 +76,7 @@ public class ApplicationManager {
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
 
         calendarMenuHelper = new CalendarMenuHelper(driver);
+        appointmentHelper = new AppointmentHelper(driver);
 
     }
 
@@ -122,9 +124,12 @@ public class ApplicationManager {
     }
 
 
+
+
     public CalendarMenuHelper getCalendarMenuHelper() {
         return calendarMenuHelper;
     }
+    public AppointmentHelper getAppointmentHelper() { return appointmentHelper; }
 
     public byte[] takeScreenshot() {
        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);

@@ -77,7 +77,7 @@ task testMenu (type: Test) {
         systemProperty 'target', "${target}"
     }
 
-    systemProperty 'allure.results.directory', 'build/allure-results'
+   
 
 }
 

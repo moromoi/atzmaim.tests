@@ -24,9 +24,15 @@ public class HelperBase {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].style.border='3px solid red'", el);
 
-        el.click();
-        el.clear();
-        el.sendKeys(text);
+        if(text != null) {
+            String existingText = el.getAttribute("value");
+            if(! text.equals(existingText)) {
+                el.click();
+                el.clear();
+                el.sendKeys(text);
+            }
+        }
+
 
     }
 

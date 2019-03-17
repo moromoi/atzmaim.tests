@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="im.atzma.tests.MenuTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-12T15:09:23" hostname="DESKTOP-2Q8P5UA" time="6.091">
+<testsuite name="im.atzma.tests.MenuTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-03-12T20:43:43" hostname="DESKTOP-2TPN2B7" time="5.226">
   <properties/>
-  <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="6.091">
+  <testcase name="checkMenuItems" classname="im.atzma.tests.MenuTest" time="5.226">
     <failure message="java.lang.AssertionError: lists don't have the same size expected [0] but found [8]" type="java.lang.AssertionError">java.lang.AssertionError: lists don't have the same size expected [0] but found [8]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -65,21 +65,10 @@
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1552403359176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Owner\\AppData\\Local\\Temp\\rust_mozprofile.8XC9x5NxjoW1"
-1552403359530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
-1552403359530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
-1552403360768	Marionette	INFO	Listening on port 57891
-1552403360809	Marionette	WARN	TLS certificate errors will be ignored for this session
-Mar 12, 2019 11:09:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-JavaScript error: https://atzma.im/public/calendar/main.bundle.min.js, line 1: TypeError: f is undefined
-1552403370074	Marionette	INFO	Stopped listening on port 57891
-[Child 17024, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 17024, Chrome_ChildThread] WARN[Child 15668, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 15668, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/b[Parent 15636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 21900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-[Child 21900, Chrome_ChildThre[GPU 7536, Chrome_Ch
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
+  <system-err><![CDATA[Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 40634
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 12, 2019 10:43:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

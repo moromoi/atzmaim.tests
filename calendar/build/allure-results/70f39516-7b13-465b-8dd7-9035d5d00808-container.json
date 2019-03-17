@@ -1,1 +1,0 @@
-{"uuid":"70f39516-7b13-465b-8dd7-9035d5d00808","name":"im.atzma.tests.TestBase.tearDown","description":"","start":1552403370040,"stop":1552403370781,"children":["6f3e1d49-620f-41af-819e-7b6cf6b1225b"],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","start":1552403370040,"stop":1552403370781}]}

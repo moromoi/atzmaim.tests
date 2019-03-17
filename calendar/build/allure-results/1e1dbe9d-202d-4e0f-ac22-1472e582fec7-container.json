@@ -1,0 +1,1 @@
+{"uuid":"1e1dbe9d-202d-4e0f-ac22-1472e582fec7","name":"im.atzma.tests.TestBase.setUp","description":"","start":1552423416404,"stop":1552423423608,"children":["667fb0e5-627d-4075-8f42-940f5e2c2b0f"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1552423416404,"stop":1552423423601}]}

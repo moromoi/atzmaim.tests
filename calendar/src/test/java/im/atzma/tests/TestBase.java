@@ -10,15 +10,15 @@ import static org.testng.Assert.fail;
 @Listeners(MyTestListener.class)
 public class TestBase {
 
-    protected final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
+    protected static ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
-    @BeforeMethod(alwaysRun = true)
+    @BeforeSuite(alwaysRun = true)
     public void setUp(ITestContext context) throws Exception {
         app.init();
         context.setAttribute("app", app);
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterSuite (alwaysRun = true)
     public void tearDown() throws Exception {
         app.stop();
     }
