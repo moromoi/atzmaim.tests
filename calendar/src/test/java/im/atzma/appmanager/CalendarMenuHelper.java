@@ -87,6 +87,7 @@ public class CalendarMenuHelper extends HelperBase {
         itemList.add("Rate us");
         itemList.add("לצאת");
 
+
         return itemList;
     }
 
@@ -98,6 +99,7 @@ public class CalendarMenuHelper extends HelperBase {
             System.out.println(calendarMenuItems.get(i).getText());
 
         }
+
         return itemListToday;
     }
 }
