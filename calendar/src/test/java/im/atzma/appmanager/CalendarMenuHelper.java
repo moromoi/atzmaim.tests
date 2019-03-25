@@ -54,9 +54,7 @@ public class CalendarMenuHelper extends HelperBase {
     }
 
     public String flipCalendar() {
-//        for(int i=1; i < 5; i++) {
-//            click(btnPrevDay);
-//        }
+        click(btnPrevDay);
         String calendarCurrentDayField = calendarCurrentDateField.getText();
         return  calendarCurrentDayField;
     }

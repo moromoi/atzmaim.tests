@@ -3,6 +3,7 @@ package im.atzma.appmanager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 public class HelperBase {
@@ -18,6 +19,12 @@ public class HelperBase {
     public void click (WebElement el) {
 
         el.click();
+    }
+
+    public void moveToElement(WebElement el) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(el);
+        actions.perform();
     }
 
     public void fillText (WebElement el, String text) {
