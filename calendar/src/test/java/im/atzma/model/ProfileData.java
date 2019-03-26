@@ -7,11 +7,53 @@ public class ProfileData {
     private String cName;
     private String procedure;
 
-    private final int indexTime;
-    private final String chooseLetter;
-    private final int indexClient;
-    private final int indexServece;
-    private final int indexProcedure;
+    private  int indexTime;
+    private  String chooseLetter;
+    private  int indexClient;
+    private  int indexService;
+    private  int indexProcedure;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ProfileData that = (ProfileData) o;
+        return Objects.equals(time, that.time) &&
+                Objects.equals(cName, that.cName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(time, cName);
+    }
+
+    @Override
+    public String toString() {
+        return "ProfileData{" +
+                "time='" + time + '\'' +
+                ", cName='" + cName + '\'' +
+                '}';
+    }
+
+    public ProfileData(String time, String cName) {
+        this.time = time;
+        this.cName = cName;
+        this.indexTime = 0;
+        this.chooseLetter = null;
+        this.indexClient = 0;
+        this.indexService = 0;
+        this.indexProcedure = 0;
+    }
+
+    public ProfileData(int indexTime, String chooseLetter, int indexClient, int indexService, int indexProcedure) {
+        this.time = null;
+        this.cName = null;
+        this.indexTime = indexTime;
+        this.chooseLetter = chooseLetter;
+        this.indexClient = indexClient;
+        this.indexService = indexService;
+        this.indexProcedure = indexProcedure;
+    }
 
     public void setProcedure(String procedure) {
         this.procedure = procedure;
@@ -27,38 +69,6 @@ public class ProfileData {
 
     public String getcName() {
         return cName;
-    }
-
-    @Override
-    public String toString() {
-        return "ProfileData{" +
-                "time='" + time + '\'' +
-                ", cName='" + cName + '\'' +
-                ", procedure='" + procedure + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ProfileData that = (ProfileData) o;
-        return Objects.equals(time, that.time) &&
-                Objects.equals(cName, that.cName) &&
-                Objects.equals(procedure, that.procedure);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(time, cName, procedure);
-    }
-
-    public ProfileData(int indexTime, String chooseLetter, int indexClient, int indexServece, int indexProcedure) {
-        this.indexTime = indexTime;
-        this.chooseLetter = chooseLetter;
-        this.indexClient = indexClient;
-        this.indexServece = indexServece;
-        this.indexProcedure = indexProcedure;
     }
 
     public String getTime() {
@@ -81,8 +91,8 @@ public class ProfileData {
         return indexClient;
     }
 
-    public int getIndexServece() {
-        return indexServece;
+    public int getIndexService() {
+        return indexService;
     }
 
     public int getIndexProcedure() {

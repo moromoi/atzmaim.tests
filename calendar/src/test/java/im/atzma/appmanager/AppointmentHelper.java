@@ -56,13 +56,13 @@ public class AppointmentHelper extends HelperBase {
     @FindBy(css = ".castom-name.oneRow")
     List<WebElement> appointmentClientNames;
 
-    @FindBy(xpath = "//span[contains(text(), 'הבא')]")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div[6]/div[19]/div/span[2]")
     WebElement btnNext;
 
     @FindBy(xpath = "//span[contains(text(), 'חזור')]")
     WebElement btnBack;
 
-    @FindBy(xpath = "//span[contains(text(), 'שמור')]")
+    @FindBy(xpath = "//*[@id=\"summary\"]/div[8]/div/span[2]")
     WebElement btnSave;
 
     @FindBy(xpath = "//button[contains(text(), 'ערוך')]")
@@ -77,7 +77,7 @@ public class AppointmentHelper extends HelperBase {
     @FindBy(xpath = "//div[@class='category']")
     List<WebElement> mainCategoriesServicesList;
 
-    @FindBy(css = ".procedures-item__name")
+    @FindBy(xpath = "//div[@class='category-container current-step']//div[@class='procedures-item__name']")
     List<WebElement> proceduresList;
 
     public AppointmentHelper(WebDriver driver) {
@@ -119,6 +119,7 @@ public class AppointmentHelper extends HelperBase {
 
     public void submitAppointmentCreation() throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(btnNext)).click();
+        Thread.sleep(500);
         wait.until(ExpectedConditions.elementToBeClickable(btnSave)).click();
 
     }
@@ -248,10 +249,10 @@ public class AppointmentHelper extends HelperBase {
 
     public void createAppointment3(ProfileData profileData) throws InterruptedException {
 
-        String dataTime = allInputTime.get(profileData.getIndexTime()).getAttribute("data-time");
-        profileData.setTime(dataTime);
-        System.out.println(profileData.getTime());
-        System.out.println("input time size: " + allInputTime.size());
+        String dataTime = allInputTime.get(profileData.getIndexTime()).getText();
+        System.out.println(profileData.getIndexTime());
+        System.out.println("Inputs time list size: " + allInputTime.size());
+        System.out.println("Choosen appointment time: " + profileData.getTime());
         click(allInputTime.get(profileData.getIndexTime()));
 
         Thread.sleep(300);
@@ -259,30 +260,41 @@ public class AppointmentHelper extends HelperBase {
         Thread.sleep(300);
 
         String cName = clientName.get(profileData.getIndexClient()).getText();
-        profileData.setcName(cName);
-        System.out.println(profileData.getcName());
-        System.out.println("client list size: " + clientList.size());
+        System.out.println(cName);
+        System.out.println("Choosen client name: " + profileData.getcName());
+        System.out.println("Client list size: " + clientList.size());
         click(clientList.get(profileData.getIndexClient()));
 
         Thread.sleep(300);
         System.out.println("Categories Services size: " + mainCategoriesServicesList.size());
-        moveToElement(mainCategoriesServicesList.get(profileData.getIndexServece()));
-        Thread.sleep(1000);
-        click(mainCategoriesServicesList.get(profileData.getIndexServece()));
+        moveToElement(mainCategoriesServicesList.get(profileData.getIndexService()));
 
-        Thread.sleep(300);
+        Thread.sleep(500);
+        System.out.println("Procedures List size: " + proceduresList.size());
+        String myProcedure = proceduresList.get(profileData.getIndexProcedure()).getText();
+        System.out.println("Choosen procedure: " +  myProcedure);
+
+        Thread.sleep(500);
         moveToElement(proceduresList.get(profileData.getIndexProcedure()));
-//        String myProcedure = proceduresList.get(profileData.getIndexProcedure()).getText();
-//        profileData.setProcedure(myProcedure);
-        System.out.println("proceduresList size: " + proceduresList.size());
-        try {
-            click(proceduresList.get(profileData.getIndexProcedure()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        System.out.println(proceduresList.get(1).getText());
+        Thread.sleep(500);
 
-        click(btnNext);
-        click(btnSave);
+        submitAppointmentCreation();
+        Thread.sleep(2000);
+    }
+
+    public List<ProfileData> getProfileList() {
+        List<ProfileData> profData = new ArrayList<>();
+        List<WebElement> elements = driver.findElements(By.cssSelector(".castom-name"));
+
+        for (WebElement element : elements) {
+            String name = element.getText();
+            String time = driver.findElement(By.cssSelector(".castom-time")).getText();
+            ProfileData profileData = new ProfileData(time, name);
+
+            profData.add(profileData);
+
+        }
+
+        return profData;
     }
 }
