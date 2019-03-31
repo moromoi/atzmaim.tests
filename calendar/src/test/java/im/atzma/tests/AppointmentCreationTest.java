@@ -3,47 +3,37 @@ package im.atzma.tests;
 import im.atzma.model.AppointmentData;
 import im.atzma.model.ProfileData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.regex.Matcher;
 
 public class AppointmentCreationTest extends TestBase {
 
-    //    @Test
-    public void testAppointmentCreation() throws InterruptedException {
-        int before = 45;
+    @BeforeMethod
+    public void preconditions() throws InterruptedException {
         if (app.getAppointmentHelper().isThereAppointment2()) {
             app.getAppointmentHelper().deleteAllAppointmentsToday();
-
         }
-        app.getAppointmentHelper().createAppointment2();
-        int after = app.getAppointmentHelper().getAppointmentCount();
-
-        Assert.assertEquals(after, before);
     }
 
     @Test
-    public void testAppointmentCreationTwoDays() throws InterruptedException {
-        app.getCalendarMenuHelper().flipCalendar();
+    public void testAppointmentCreationMain() throws InterruptedException {
+//        app.getCalendarMenuHelper().flipCalendar();
 
-        if (app.getAppointmentHelper().isThereAppointment2()) {
-            app.getAppointmentHelper().deleteAllAppointmentsToday();
+        List<ProfileData> before = app.getAppointmentHelper().createAppointment3
+                (new ProfileData(23, "נונה", 0,
+                        0, 0, "test first test"));
 
-        }
-
-        int first = 23;
-        app.getAppointmentHelper().createAppointment3(new ProfileData(first , "מ", 1,
-                1, 0));
-        List<ProfileData> before = app.getAppointmentHelper().getProfileList();
-
-        app.getAppointmentHelper().createAppointment3(new ProfileData(first + 10, "מ", 1,
-                1, 0));
+        System.out.println("Appointment time, client name, procedure creating: " + before);
 
         List<ProfileData> after = app.getAppointmentHelper().getProfileList();
 
+        System.out.println("Appointment time, client name, procedure chosen: " + after);
 
         Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
     }

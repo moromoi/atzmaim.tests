@@ -230,7 +230,7 @@ public class AppointmentHelper extends HelperBase {
     }
 
     public List<AppointmentData> getAppointmentList() {
-        List<AppointmentData> appData = new ArrayList<AppointmentData>();
+        List<AppointmentData> appData = new ArrayList<>();
         List<WebElement> elements = driver.findElements(By.cssSelector(".castom-name.oneRow"));
         for (WebElement element : elements) {
             String name = element.getText();
@@ -247,12 +247,10 @@ public class AppointmentHelper extends HelperBase {
         click(btnDelete);
     }
 
-    public void createAppointment3(ProfileData profileData) throws InterruptedException {
+    public List<ProfileData> createAppointment3(ProfileData profileData) throws InterruptedException {
 
-        String dataTime = allInputTime.get(profileData.getIndexTime()).getText();
-        System.out.println(profileData.getIndexTime());
-        System.out.println("Inputs time list size: " + allInputTime.size());
-        System.out.println("Choosen appointment time: " + profileData.getTime());
+        List<ProfileData> profData = new ArrayList<>();
+
         click(allInputTime.get(profileData.getIndexTime()));
 
         Thread.sleep(300);
@@ -260,41 +258,47 @@ public class AppointmentHelper extends HelperBase {
         Thread.sleep(300);
 
         String cName = clientName.get(profileData.getIndexClient()).getText();
-        System.out.println(cName);
-        System.out.println("Choosen client name: " + profileData.getcName());
-        System.out.println("Client list size: " + clientList.size());
         click(clientList.get(profileData.getIndexClient()));
 
         Thread.sleep(300);
-        System.out.println("Categories Services size: " + mainCategoriesServicesList.size());
         moveToElement(mainCategoriesServicesList.get(profileData.getIndexService()));
-
-        Thread.sleep(500);
-        System.out.println("Procedures List size: " + proceduresList.size());
-        String myProcedure = proceduresList.get(profileData.getIndexProcedure()).getText();
-        System.out.println("Choosen procedure: " +  myProcedure);
 
         Thread.sleep(500);
         moveToElement(proceduresList.get(profileData.getIndexProcedure()));
         Thread.sleep(500);
 
-        submitAppointmentCreation();
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnNext)).click();
+        Thread.sleep(500);
+        String dataTime = driver.findElement(By.cssSelector(".date-step__time")).getText();
+        String prosedure = driver.findElement(By.cssSelector("span[class=price-step__item-name]")).getText();
+        fillText(commentArea, profileData.getNote());
+        String note = profileData.getNote();
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnSave)).click();
+
         Thread.sleep(2000);
+
+        ProfileData profileData2 = new ProfileData(dataTime, cName, prosedure, note);
+        profData.add(profileData2);
+        return profData;
     }
 
     public List<ProfileData> getProfileList() {
-        List<ProfileData> profData = new ArrayList<>();
+        List<ProfileData> profData2 = new ArrayList<>();
         List<WebElement> elements = driver.findElements(By.cssSelector(".castom-name"));
 
         for (WebElement element : elements) {
             String name = element.getText();
             String time = driver.findElement(By.cssSelector(".castom-time")).getText();
-            ProfileData profileData = new ProfileData(time, name);
+            String procedure = driver.findElement(By.cssSelector(".castom-service")).getText();
+            String note = driver.findElement(By.cssSelector(".castom-note")).getText();
+            ProfileData profileData = new ProfileData(time, name, procedure, note);
 
-            profData.add(profileData);
+            profData2.add(profileData);
 
         }
 
-        return profData;
+        return profData2;
     }
 }
