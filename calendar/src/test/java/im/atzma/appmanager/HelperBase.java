@@ -1,9 +1,6 @@
 package im.atzma.appmanager;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,16 +20,20 @@ public class HelperBase {
 
     public void click(WebElement el) {
 
-        el.click();
+        try {
+            el.click();
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+        }
     }
 
     public void moveToElement(WebElement el) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", el);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].style.border='3px solid red'", el);
 
         try {
             if (el.isEnabled() && el.isDisplayed()) {
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", el);
-                ((JavascriptExecutor) driver).executeScript("arguments[0].style.border='3px solid red'", el);
 //                wait.until(ExpectedConditions.elementToBeClickable(el)).click();
 //                ((JavascriptExecutor) driver).executeScript("var el =arguments[0]; setTimeout(function() {elem.click();}, 500)", el);
                 el.click();
@@ -48,7 +49,6 @@ public class HelperBase {
         } catch (Exception e) {
             System.out.println("Unable to click on element " + e.getStackTrace());
         }
-        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
 
     }

@@ -7,8 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class AppointmentHelper extends HelperBase {
     WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -35,7 +34,7 @@ public class AppointmentHelper extends HelperBase {
     @FindBy(xpath = "(//span[text() = 'Victor Sulema'])[2]")
     WebElement chooseClient;
 
-    @FindBy(xpath = "//div[@class='filter-clients']//div[@class='all-clients__item']")
+    @FindBy(xpath = "//div[@class='all-clients__item']")
     List<WebElement> clientList;
 
     @FindBy(xpath = "//div[@class='filter-clients']//div[@class='all-clients__item']//span[@class='all-clients__item-name']")
@@ -173,7 +172,7 @@ public class AppointmentHelper extends HelperBase {
         while (attempts < 2) {
             try {
                 for (int i = 0; i < allInputTime.size(); i++) {
-                    click(allInputTime.get(i));
+//                    click(allInputTime.get(i));
                     searchExistingClient();
                     Thread.sleep(1000);
                     submitAppointmentCreation();
@@ -208,7 +207,7 @@ public class AppointmentHelper extends HelperBase {
     }
 
 
-    public int getAppointmentCount() throws InterruptedException {
+    public int count() throws InterruptedException {
         Thread.sleep(500);
         return listExistingAppointments.size();
     }
@@ -250,53 +249,66 @@ public class AppointmentHelper extends HelperBase {
     public List<ProfileData> createAppointment3(ProfileData profileData) throws InterruptedException {
 
         List<ProfileData> profData = new ArrayList<>();
+        Random random = new Random();
 
         click(allInputTime.get(profileData.getIndexTime()));
 
         Thread.sleep(300);
-        fillText(inputSearchClient, profileData.getChooseLetter());
-        Thread.sleep(300);
+//        fillText(inputSearchClient, profileData.getChooseLetter());
+//        Thread.sleep(300);
+        System.out.println(clientList.size());
+        moveToElement(clientList.get(random.nextInt(clientList.size())));
+        String cName = driver.findElement(By.cssSelector("span.header__user-name")).getText();
 
-        String cName = clientName.get(profileData.getIndexClient()).getText();
-        click(clientList.get(profileData.getIndexClient()));
-
         Thread.sleep(300);
+//        moveToElement(mainCategoriesServicesList.get(random.nextInt(mainCategoriesServicesList.size())));
         moveToElement(mainCategoriesServicesList.get(profileData.getIndexService()));
-
-        Thread.sleep(500);
-        moveToElement(proceduresList.get(profileData.getIndexProcedure()));
         Thread.sleep(500);
 
-
-        wait.until(ExpectedConditions.elementToBeClickable(btnNext)).click();
-        Thread.sleep(500);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", proceduresList.get(random.nextInt(proceduresList.size())));
+//        click(proceduresList.get(random.nextInt(proceduresList.size())));
+moveToElement(proceduresList.get(profileData.getIndexProcedure()));
+        click(btnNext);
+        Thread.sleep(800);
         String dataTime = driver.findElement(By.cssSelector(".date-step__time")).getText();
         String prosedure = driver.findElement(By.cssSelector("span[class=price-step__item-name]")).getText();
         fillText(commentArea, profileData.getNote());
         String note = profileData.getNote();
 
-        wait.until(ExpectedConditions.elementToBeClickable(btnSave)).click();
+        Thread.sleep(800);
+        for (int i = 0; i < 2; i++) {
+            click(btnSave);
+        }
 
-        Thread.sleep(2000);
+        Thread.sleep(10000);
 
         ProfileData profileData2 = new ProfileData(dataTime, cName, prosedure, note);
         profData.add(profileData2);
         return profData;
     }
 
-    public List<ProfileData> getProfileList() {
+    public List<ProfileData> getProfileList() throws InterruptedException {
         List<ProfileData> profData2 = new ArrayList<>();
         List<WebElement> elements = driver.findElements(By.cssSelector(".castom-name"));
+        String note = null;
 
         for (WebElement element : elements) {
             String name = element.getText();
             String time = driver.findElement(By.cssSelector(".castom-time")).getText();
             String procedure = driver.findElement(By.cssSelector(".castom-service")).getText();
-            String note = driver.findElement(By.cssSelector(".castom-note")).getText();
+
+            click(existingAppointment);
+            Thread.sleep(500);
+            moveToElement(driver.findElement(By.cssSelector(".notes-txt")));
+            note = driver.findElement(By.cssSelector(".notes-txt")).getText();
+            Thread.sleep(500);
+
             ProfileData profileData = new ProfileData(time, name, procedure, note);
 
             profData2.add(profileData);
 
+            driver.findElement(By.cssSelector(".close-popup")).click();
+            driver.navigate().refresh();
         }
 
         return profData2;

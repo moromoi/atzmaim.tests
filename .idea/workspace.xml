@@ -4,10 +4,16 @@
     <list default="true" id="4be12b6c-4631-475b-8924-93bae68bd853" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/appmanager/AppointmentHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/appmanager/AppointmentHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/model/ProfileData.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/model/ProfileData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/tests/AppointmentCreationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/tests/AppointmentCreationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/tests/AppointmentDeletionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/classes/im/atzma/tests/AppointmentDeletionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/out/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/AppointmentHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/AppointmentHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/ProfileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/ProfileData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentDeletionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/src/test/resources/local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/calendar/.gradle/" />
     <ignored path="$PROJECT_DIR$/calendar/build/" />
@@ -26,17 +32,48 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="calendar" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="205">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -44,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/AppointmentHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
+            <state relative-caret-position="-67">
+              <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,12 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/ProfileData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="80" column="48" lean-forward="true" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-              <folding>
-                <element signature="e#1182#1183#0" expanded="true" />
-                <element signature="e#1250#1251#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1037">
+              <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -69,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+            <state relative-caret-position="-57">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -83,18 +116,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentDeletionTest.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/AppointmentData.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentModificationTest.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/CalendarMenuHelper.java" />
+        <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/ProfileData.java" />
+        <option value="$PROJECT_DIR$/calendar/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/AppointmentHelper.java" />
+        <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentCreationTest.java" />
-        <option value="$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/ProfileData.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1929" />
@@ -106,7 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,11 +206,19 @@
               <item name="atzma" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="calendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="calendar" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AppointmentCreationTest.testAppointmentCreationMain">
+  <component name="RunManager" selected="TestNG.AppointmentCreationTest">
     <configuration name="AppointmentCreationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="calendar.test" />
       <option name="PACKAGE_NAME" value="im.atzma.tests" />
@@ -253,9 +300,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AppointmentCreationTest" />
         <item itemvalue="TestNG.AppointmentCreationTest.testAppointmentCreationMain" />
         <item itemvalue="TestNG.AppointmentCreationTest.testAppointmentCreationTwoDays" />
-        <item itemvalue="TestNG.AppointmentCreationTest" />
         <item itemvalue="TestNG.AppointmentModificationTest" />
         <item itemvalue="TestNG.AppointmentDeletionTest" />
       </list>
@@ -275,90 +322,64 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationTwoDays - 2019.03.31 at 20h 18m 00s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationTwoDays" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 37m 46s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationTwoDays - 2019.03.31 at 20h 26m 54s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationTwoDays" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 39m 09s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationTwoDays - 2019.03.31 at 20h 28m 33s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationTwoDays" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 41m 25s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 21m 41s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 42m 49s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 30m 28s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 44m 25s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 34m 02s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 45m 42s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 46m 54s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 46m 18s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 50m 06s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 48m 54s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 53m 53s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 53m 20s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AppointmentCreationTest_testAppointmentCreationMain - 2019.03.31 at 21h 57m 18s.xml">
-      <configuration name="AppointmentCreationTest.testAppointmentCreationMain" configurationId="TestNG" />
+    <history-entry file="AppointmentCreationTest - 2019.04.04 at 21h 57m 17s.xml">
+      <configuration name="AppointmentCreationTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1286" height="688" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14763458" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24225122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3291367" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49918568" visible="true" weight="0.070143886" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918568" weight="0.4586331" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.19881889" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.19784173" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291367" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008143" side_tool="true" weight="0.31654677" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32874015" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291367" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32553956" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Gradle" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49820143" weight="0.32952693" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" sideWeight="0.50179857" weight="0.32952693" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14763458" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Learn" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3291367" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49918568" visible="true" weight="0.053956833" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.19881889" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008143" side_tool="true" weight="0.31654677" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.32874015" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291367" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Gradle" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/calendar/build.gradle">
@@ -385,20 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -440,28 +447,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/HelperBase.java">
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/resources/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/model/ProfileData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="80" column="48" lean-forward="true" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-          <folding>
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1037">
+          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/AppointmentHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
+        <state relative-caret-position="-67">
+          <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -470,8 +487,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/tests/AppointmentCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="205">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/src/test/java/im/atzma/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>

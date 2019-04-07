@@ -1,0 +1,1 @@
+{"uuid":"e1e52e80-6dcf-44c4-86d6-4f981cc68c56","name":"im.atzma.tests.AppointmentCreationTest.preconditions","description":"","start":1554403255033,"stop":1554403260127,"children":["54771460-e663-428a-8de2-68a310f7eef0"],"befores":[{"name":"preconditions","status":"passed","stage":"finished","description":"","start":1554403255034,"stop":1554403260126}]}

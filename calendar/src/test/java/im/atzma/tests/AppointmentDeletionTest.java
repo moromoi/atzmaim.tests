@@ -11,9 +11,9 @@ public class AppointmentDeletionTest extends TestBase {
             app.getAppointmentHelper().createAppointment();
 
         }
-        int after = app.getAppointmentHelper().getAppointmentCount();
+        int after = app.getAppointmentHelper().count();
         app.getAppointmentHelper().deleteSelectedAppointment();
-        int before = app.getAppointmentHelper().getAppointmentCount();
+        int before = app.getAppointmentHelper().count();
 
         Assert.assertEquals(after, before);
     }
